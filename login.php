@@ -1,13 +1,21 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>login page</title>
-</head>
-
-<body>
 <?php
-echo "hello" . "<br>" . "world";
+$pageTitle = "ورود";
+include("inc/header.php");
 ?>
-</body>
-</html>
+
+<div class="login_form">
+	<form action="login_process.php" method="post">
+		<h2>فرم ورود</h2>
+		<!-- <label>نام کاربری</label> -->
+		<input type="text" placeholder="ورود نام کاربری">
+		<br>
+		<!-- <label>نام خانوادگی</label> -->
+		<input type="password" placeholder="ورود پسورد">
+		<br>
+		<input type="submit" value="ورود">
+	</form>
+</div>
+
+<?php
+include("inc/footer.php");
+?>
