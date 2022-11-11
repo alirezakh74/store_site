@@ -31,6 +31,15 @@
                     <li>
                         <a href="signup.php">ثبت نام</a>
                     </li>
+                    <li>
+                        <span class='jdate'>
+                            امروز: 
+                            <?php
+                            require_once("jdf.php");
+                            echo jdate("Y/m/d", "", "","Asia/Tehran", "fa");
+                            ?>
+                        </span>
+                    </li>
                 </div>
             </ul>
         </nav>
