@@ -1,3 +1,6 @@
+*{
+    font-family: tahoma;
+}
 body{
     direction: rtl;
     background-color: silver;
@@ -41,9 +44,74 @@ ul li a{
 .singup_form,
 .login_form,
 .contact_form{
+    width: 300px;
     text-align: center;
-    width: 100px;
     margin: 0 auto;
+    border: 5px solid #2f3542;
+    border-radius: 10%;
+    background-color: #747d8c;
+    margin-top: 2%;
+}
+
+div.contact_form{
+    height: 400px;
+    /* margin-top: 2%; */
+}
+
+div.singup_form{
+    height: 380px;
+    /* margin-top: 2%; */
+}
+
+ div.login_form{
+    height: 300px;
+    /* margin-top: 2%; */
+}
+
+div.login_form form{
+    padding-top: 40px;
+}
+
+label.file_label {
+    cursor: pointer;
+    /* Style as you please, it will become the visible UI component. */
+    /* background-color: #da7148; */
+    /* padding: 8px; */
+    /* border-radius: 5px; */
+ }
+ 
+ #pic_file {
+    /* opacity: 0%; */
+    /* position: absolute; */
+    /* z-index: -1; */
+    /* margin-bottom: 3px; */
+ }
+
+input{
+    margin-bottom: 10px;
+}
+
+input[type=file]{
+    /* padding-right: 110px; */
+}
+
+input[type=text],
+input[type=password],
+input[type=email]{
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input[type=submit]{
+    width: 100px;
+    background-color: aquamarine;
+    color:black;
+    font-size: 20px;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 .row{
@@ -94,6 +162,38 @@ ul li a{
     margin: 8px;
     padding: 8px;
 }
+
+#jsdate{
+    color: white;
+}
+
 .jdate{
     color: white;
+}
+
+table, tr, th, td{
+    border: 3px solid black;
+}
+
+.user_table, .user_table tr, .user_table th, .user_table td{
+    background-color: green;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.user_table tr, .user_table th, .user_table td{
+    margin-left: 15px;
+}
+
+.user_table th{
+    background-color: rgb(22, 172, 152);
+}
+
+.user_table td{
+    background-color: gray;
+    font-size: 20px;
+}
+
+.ltr{
+    direction: ltr;
 }
