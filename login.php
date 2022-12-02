@@ -7,9 +7,14 @@ include("inc/header.php");
 require_once("inc/functions.php");
 if(isset($_POST['email']) and isset($_POST['pass']))
 {
-	if(isRegisteredUser($_POST['email']))
+
+	$email = $_POST['email'];
+	$email = strtolower(trim($email));
+	$pass = $_POST['pass'];
+
+	if(isRegisteredUser($email))
 	{
-		if(checkPassUser($_POST['pass']))
+		if(checkPassUser($pass))
 		{
 			header("Location: dashboard.php");
 		}
