@@ -24,8 +24,8 @@ function startSave()
         $fname = input_check($_POST["fname"]);
         $lname = input_check($_POST["lname"]);
         $email = input_check(strtolower($_POST["email"]));
-        $pass = input_check($_POST["pass"]);
-        $rpass = input_check($_POST["rpass"]);
+        $pass = $_POST["pass"];
+        $rpass = $_POST["rpass"];
 
         echo "نام: " . $fname . "<br>";
         echo "نام خانوادگی: " . $lname . "<br>";
