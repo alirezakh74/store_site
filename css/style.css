@@ -1,0 +1,199 @@
+*{
+    font-family: tahoma;
+}
+body{
+    direction: rtl;
+    background-color: silver;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 550px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+
+ul a:hover{
+    background-color: red;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.singup_form,
+.login_form,
+.contact_form{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    border: 5px solid #2f3542;
+    border-radius: 10%;
+    background-color: #747d8c;
+    margin-top: 2%;
+}
+
+div.contact_form{
+    height: 400px;
+    /* margin-top: 2%; */
+}
+
+div.singup_form{
+    height: 380px;
+    /* margin-top: 2%; */
+}
+
+ div.login_form{
+    height: 300px;
+    /* margin-top: 2%; */
+}
+
+div.login_form form{
+    padding-top: 40px;
+}
+
+label.file_label {
+    cursor: pointer;
+    /* Style as you please, it will become the visible UI component. */
+    /* background-color: #da7148; */
+    /* padding: 8px; */
+    /* border-radius: 5px; */
+ }
+ 
+ #pic_file {
+    /* opacity: 0%; */
+    /* position: absolute; */
+    /* z-index: -1; */
+    /* margin-bottom: 3px; */
+ }
+
+input{
+    margin-bottom: 10px;
+}
+
+input[type=file]{
+    /* padding-right: 110px; */
+}
+
+input[type=text],
+input[type=password],
+input[type=email]{
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input[type=submit]{
+    width: 100px;
+    background-color: aquamarine;
+    color:black;
+    font-size: 20px;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.row{
+    text-align: center;
+}
+
+.column{
+
+}
+
+.rightNav{
+    float: right;
+}
+
+.leftNav{
+    float: left;
+}
+
+.page{
+    width: 90%;
+    text-align: center;
+    float: center;
+}
+
+.content{
+    width: 75%;
+    text-align: right;
+    margin: 0 auto;
+    border: 2px solid blue;
+    float: left;
+}
+
+.sidebar{
+    width: 20%;
+    height: 950px;
+    padding: 5px;
+    text-align: right;
+    border: 3px solid red;
+    float: right;
+}
+
+.content p{
+    margin: 8px;
+    padding: 5px;
+}
+
+.content h1{
+    margin: 8px;
+    padding: 8px;
+}
+
+#jsdate{
+    color: white;
+}
+
+.jdate{
+    color: white;
+}
+
+table, tr, th, td{
+    border: 3px solid black;
+}
+
+.user_table, .user_table tr, .user_table th, .user_table td{
+    background-color: green;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.user_table tr, .user_table th, .user_table td{
+    margin-left: 15px;
+}
+
+.user_table th{
+    background-color: rgb(22, 172, 152);
+}
+
+.user_table td{
+    background-color: gray;
+    font-size: 20px;
+}
+
+.ltr{
+    direction: ltr;
+}
