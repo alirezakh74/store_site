@@ -34,7 +34,7 @@ function startSave()
 
         save_user();
     } else {
-        echo "ثبت نام مشکل دارد و انجام نشد";
+        echo "<p style='text-align: center; color: red;'>ثبت نام مشکل دارد و انجام نشد</p>";
     }
 }
 
@@ -44,7 +44,7 @@ if(isset($_POST['pass']) and isset($_POST["rpass"]) and ($_POST['pass'] == $_POS
 }
 else
 {
-    echo "رمز مجدد مطابقت ندارد";
+    echo "<p style='text-align: center; color: red;'>رمز مجدد مطابقت ندارد</p>";
 }
 
 ?>

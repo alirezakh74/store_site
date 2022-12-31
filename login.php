@@ -1,13 +1,8 @@
 <?php
-$pageTitle = "ورود";
-include("inc/header.php");
-?>
-
-<?php
 require_once("inc/functions.php");
 if(isset($_POST['email']) and isset($_POST['pass']))
 {
-
+	
 	$email = $_POST['email'];
 	$email = strtolower(trim($email));
 	$pass = $_POST['pass'];
@@ -20,14 +15,19 @@ if(isset($_POST['email']) and isset($_POST['pass']))
 		}
 		else
 		{
-			echo "رمز عبور اشتباه است";
+			echo "<p style='text-align: center; color: red;'>رمز عبور اشتباه است</p>";
 		}
 	}
 	else
 	{
-		echo "نام کاربری ثبت نشده است";
+		echo "<p style='text-align: center; color: red;'>نام کاربری ثبت نشده است</p>";
 	}
 }
+?>
+
+<?php
+$pageTitle = "ورود";
+include("inc/header.php");
 ?>
 
 <div class="login_form">
